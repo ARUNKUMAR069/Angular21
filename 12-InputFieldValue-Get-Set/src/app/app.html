@@ -1,0 +1,19 @@
+<h1>Get and Set Input Field</h1>
+
+<input type="text" (input)="getName($event)"  placeholder="Enter Your Username">
+<br>
+<br>
+
+
+<h1>You Username is : {{displayName}}</h1>
+<button  (click)="showName()" class="text-amber-950 border-4 rounded-2xl">Get Value</button>
+
+<br><br><br>
+<br><br><br>
+<hr>
+<hr>
+<input type="email" placeholder="Enter Your Email"  #emailField>
+<button (click)="getEmail(emailField.value)" >Get Email</button>
+
+<div>Your Email is {{email}}</div>
+<!-- <button (click)="" >Set Email</button> -->
