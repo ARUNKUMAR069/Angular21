@@ -1,0 +1,39 @@
+<h1>Loops in the Angular</h1>
+
+<!--  Simply use Array  -->
+<h1>User {{ users[0] }}</h1>
+<h1>User {{ users[1] }}</h1>
+<h1>User {{ users[2] }}</h1>
+<h1>User {{ users[3] }}</h1>
+<h1>User {{ users[4] }}</h1>
+
+<h1>Via Using ForLoop</h1>
+
+@for(user of users; track user){
+<div>{{ user }}</div>
+}
+
+<div
+  style="display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; align-content: center"
+>
+  <!-- <h1>Student Details</h1> -->
+  @for(student of students; track student; let id=$index){
+  <div
+    style="
+      background-color: brown;
+      color: whitesmoke;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      width: 300px;
+      height: 150px;
+    "
+  >
+    <div>Student ID is :{{ id+1 }}</div>
+    <div>Student Name is :{{ student.name }}</div>
+    <div>Student Grade is :{{ student.grade }}</div>
+    <div>Student Age is :{{ student.age }}</div>
+  </div>
+  }
+</div>
