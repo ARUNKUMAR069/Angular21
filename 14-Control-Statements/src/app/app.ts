@@ -10,9 +10,12 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('14-Control-Statements');
   display=true
-
+  color=1
 
   toggleDisplay() {
     this.display=!this.display
+  }
+  colorChnageBox(value:number) {
+    this.color=value
   }
 }
