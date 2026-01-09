@@ -1,0 +1,12 @@
+<h1>Computed Signals</h1>
+<h1>Value of X :{{ x }}</h1>
+<h1>Value of X1 :{{ x1() }}</h1>
+<h1>Value of Y :{{ y }}</h1>
+<h1>Value of Y1 :{{ y1() }}</h1>
+<h1>Valueof Z : {{ z }}</h1>
+<h1>Value of Z1 via Computed Signal : {{z1()}}</h1>
+<button (click)="showValue()">Show Value</button>
+<button (click)="updateX()">Value of X updarte</button>
+<button (click)="x1.set(x1()+10)">Value of X1 update</button>
+<button (click)="updateY()">Value of Y Update</button>
+<button (click)="y1.set(y1()+10)">Value of Y1 Update</button>
