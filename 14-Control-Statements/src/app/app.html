@@ -9,19 +9,43 @@
 <div>Implemeting ElseIF</div>
 @if(color==1){
 <div style="background-color: red; height: 400px; width: 400px">Box1</div>
-} 
-@else if(color==2){
+} @else if(color==2){
 <div style="background-color: blue; height: 400px; width: 400px">Box2</div>
-}
-@else if(color==3){
+} @else if(color==3){
 <div style="background-color: green; height: 400px; width: 400px">Box3</div>
-}
-@else{
+} @else{
 <div style="background-color: black; height: 400px; width: 400px">Box4</div>
 }
-
 
 <button (click)="colorChnageBox(1)">Red</button>
 <button (click)="colorChnageBox(3)">Green</button>
 <button (click)="colorChnageBox(2)">Blue</button>
 <button (click)="colorChnageBox(4)">Black</button>
+
+<h3>Switch Statements</h3>
+
+@switch(colordiv){ @case('red'){
+<div>Red Color</div>
+} @case('black'){
+<div>Black Color</div>
+} @case('aqua'){
+<div>Aqua Color</div>
+} @case('crimson'){
+<div>Crimson Color</div>
+} @case('yellow'){
+<div>Yelloww Color</div>
+} @case('green'){
+<div>Green Color</div>
+} @case('blue'){
+<div>Blue Color</div>
+} @default(){
+<div>No color</div>
+} }
+
+<button (click)="colorChangeDiv('red')">Red</button>
+<button (click)="colorChangeDiv('aqua')">Aqua</button>
+<button (click)="colorChangeDiv('black')">Black</button>
+<button (click)="colorChangeDiv('crimson')">Crimson</button>
+<button (click)="colorChangeDiv('yellow')">Yellow</button>
+<button (click)="colorChangeDiv('green')">Green Color</button>
+<button (click)="colorChangeDiv('blue')">Blue Color></button>
