@@ -1,0 +1,37 @@
+<h1>Signals in Angular</h1>
+
+<!--  Using Signal -->
+<!-- <div>{{ count() }}</div> -->
+<div
+  style="
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px;
+    font-size: 70px;
+    background-color: aquamarine;
+  "
+>
+  {{ count() }}
+</div>
+
+<!-- using the simple property -->
+<div
+  style="
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px;
+    font-size: 70px;
+    background-color: aquamarine;
+  "
+>
+  {{ x }}
+</div>
+
+<button (click)="count.set(count() + 1)">Increment Signal</button>
+<button (click)="count.set(count() - 1)">Decrement Signal</button>
+<button (click)="updateValue('+')">Increment property</button>
+<button (click)="updateValue('-')">Decrement property</button>
