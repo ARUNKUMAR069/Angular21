@@ -1,0 +1,23 @@
+<h1>Contextual Variable</h1>
+
+@for (user of user; track user ;let i = $index ) {
+
+@if($first || $even){
+  <div style="background-color: antiquewhite;">{{$index+1}} {{user}}</div>
+}
+@else {
+  <div style="background-color: rgb(237, 135, 3);">{{$index+1}} {{user}}</div>
+}
+}
+@empty {
+  <div>Data is EMpty</div>
+}
+
+
+@for (user of user; track $index) {
+
+  @if($odd){
+    <div>The Element is : {{$index}}</div>
+  }
+  
+}
