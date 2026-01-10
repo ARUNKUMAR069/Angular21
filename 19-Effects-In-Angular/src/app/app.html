@@ -1,0 +1,13 @@
+<h1>Effects</h1>
+<h1>{{ username() }}</h1>
+<button (click)="username.set('sam')">Update username</button>
+
+<h1>Count Value : {{ count() }}</h1>
+<button (click)="toggleValue()">Increase Count</button>
+@if(displayHeading()){
+<h1 style="width: 1000px; height: 150px; background-color: cadetblue; color: black; padding: 10px">
+  Page Heading
+</h1>
+}
+
+
