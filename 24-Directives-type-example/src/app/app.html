@@ -1,0 +1,23 @@
+<h1   *ngIf="show">Directives in Angualr</h1>
+
+<!-- Using NG FOR -->
+<ul>
+  <li *ngFor="let x of students">
+    {{x}}
+  </li>
+</ul>
+
+<!--  U -->
+<ul>
+<li *ngFor="let teacher of teachers">
+  <ul>
+
+    <li>Teacher Name : {{teacher.name}}</li>
+    <li>subject : {{teacher.subject}}</li>
+  </ul>
+</li>
+</ul>
+
+
+<h1 *ngIf="show">Heading</h1>
+
