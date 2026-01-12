@@ -1,0 +1,78 @@
+<nav
+    style="
+        width: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    "
+>
+    <div class="brand" style="font-size: 24px; font-weight: bold; color: #ffffff;">
+        Routing
+    </div>
+    <ul
+        class="nav-links"
+        style="
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        "
+    >
+        <li style="transition: transform 0.2s ease;">
+            <a
+                routerLink="/login"
+                style="
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                "
+                onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#667eea'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff'; this.style.transform='scale(1)';"
+            >
+                Login
+            </a>
+        </li>
+        <li style="transition: transform 0.2s ease;">
+            <a
+                routerLink="/contact"
+                style="
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                "
+                onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#667eea'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff'; this.style.transform='scale(1)';"
+            >
+                Contact Us
+            </a>
+        </li>
+        <li style="transition: transform 0.2s ease;">
+            <a
+                routerLink="/about"
+                style="
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                "
+                onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#667eea'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff'; this.style.transform='scale(1)';"
+            >
+                About Us
+            </a>
+        </li>
+    </ul>
+</nav>
