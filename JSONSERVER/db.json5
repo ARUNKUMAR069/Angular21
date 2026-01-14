@@ -1,12 +1,78 @@
 {
-  posts: [
-    { id: "1", title: "a title", views: 100 },
-    { id: "2", title: "another title", views: 200 },
-    { id: "2127", name: "Arun", title: "B Title", views: 1000 },
+  "posts": [
+    {
+      "id": "1",
+      "title": "A Title",
+      "views": 100,
+      "author": {
+        "id": "u1",
+        "name": "System"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Another Title",
+      "views": 200,
+      "author": {
+        "id": "u1",
+        "name": "System"
+      }
+    },
+    {
+      "id": "2127",
+      "title": "B Title",
+      "views": 1000,
+      "author": {
+        "id": "u2",
+        "name": "Arun"
+      }
+    }
   ],
-  comments: [
-    { id: "1", text: "a comment about post 1", postId: "1" },
-    { id: "2", text: "another comment about post 1", postId: "1" },
+  "comments": [
+    {
+      "id": "1",
+      "text": "A comment about post 1",
+      "postId": "1",
+      "user": {
+        "id": "u3",
+        "name": "Anonymous"
+      }
+    },
+    {
+      "id": "2",
+      "text": "Another comment about post 1",
+      "postId": "1",
+      "user": {
+        "id": "u4",
+        "name": "Guest"
+      }
+    }
   ],
-  profile: { name: "typicode" },
+  "users": [
+    {
+      "id": "u1",
+      "name": "System",
+      "role": "admin"
+    },
+    {
+      "id": "u2",
+      "name": "Arun",
+      "role": "author"
+    },
+    {
+      "id": "u3",
+      "name": "Anonymous",
+      "role": "user"
+    },
+    {
+      "id": "u4",
+      "name": "Guest",
+      "role": "user"
+    }
+  ],
+  "profile": {
+    "name": "typicode",
+    "	version": "1.0.0",
+    "description": "Demo API data for posts and comments"
+  }
 }

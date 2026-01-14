@@ -1,0 +1,9 @@
+<h1>Integrating the JSON SERVER API with Angular</h1>
+
+@for (user of users(); track user) {
+<div>Id : {{ user.id }}</div>
+<div>Name : {{ user.name }}</div>
+<div>Role: {{ user.role }}</div>
+} @empty {
+<div>Nothing Available</div>
+}
