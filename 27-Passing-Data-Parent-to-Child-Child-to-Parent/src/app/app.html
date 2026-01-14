@@ -1,0 +1,9 @@
+<h1>Passing Parent to Child Data</h1>
+
+<input  [(ngModel)]="user"  type="text" name="" id="">
+<button (click)="addNewUser(user())" (keypress)="addNewUser(user())" >Add New User</button>
+@for (user of users(); track user) {
+
+  <app-child  [userName]="user"></app-child>
+}
+
