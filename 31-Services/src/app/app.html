@@ -1,0 +1,12 @@
+<h1>Services</h1>
+
+@for (data of productData(); track data) {
+<div>
+  <h1>Product Id : {{ data.id }}</h1>
+  <h1>Product Name : {{ data.name }}</h1>
+  <h1>Product Price : {{ data.price }}</h1>
+</div>
+
+} @empty {
+<div>No data available</div>
+}
