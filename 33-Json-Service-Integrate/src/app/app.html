@@ -4,6 +4,10 @@
 <div>Id : {{ user.id }}</div>
 <div>Name : {{ user.name }}</div>
 <div>Role: {{ user.role }}</div>
+<button (click)="deleteUsers(user.id)">Delete Me</button>
 } @empty {
 <div>Nothing Available</div>
 }
+
+
+<app-form></app-form>
