@@ -1,0 +1,14 @@
+<h1>/home Route</h1>
+<h1>User List</h1>
+<!-- <h1>/home Route</h1> -->
+<ul>
+
+    @for (user of users; track user.id) {
+        <div>
+            <!-- <a routerLink="user"><h1>id: {{ user.id }}</h1></a> -->
+            <a routerLink="user/{{user.id}}"><h1>Username: {{ user.name }}</h1></a>
+            <a routerLink="user/{{user.id}}"><h1>Email: {{ user.email }}</h1></a>
+        </div>
+    }
+</ul>
+<!-- id: '3', name: 'Alice Johnson', email: 'someone@gmail.com', -->
