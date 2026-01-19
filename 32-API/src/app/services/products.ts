@@ -11,4 +11,8 @@ export class Products {
     const productsUrl = 'https://dummyjson.com/products';
     return this.http.get(productsUrl);
   }
+  getProductById(id:number) {
+    const productUrl = `https://dummyjson.com/products/${id}`;
+    return this.http.get(productUrl);
+  }
 }
